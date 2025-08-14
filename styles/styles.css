@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+
+main, header .hero-section, header nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: hsl(0, 0%, 100%);
+}
+header nav {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .hero-section {
+  margin-inline-start: 10%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .hero-section h1 {
+  border: 1px solid hsl(0, 0%, 100%);
+  font-size: 60px;
+  max-width: 45%;
+  text-transform: uppercase;
+  padding: 2rem;
+}
+
+nav .logo {
+  max-height: 2rem;
+}
+nav .nav-links ul {
+  display: flex;
+  gap: 2rem;
+}
+nav .nav-links ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+nav .nav-links ul li:hover {
+  cursor: pointer;
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+main .main-top {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.main-top .main-img {
+  width: 55%;
+}
+.main-top .main-img img {
+  width: 100%;
+}
+.main-top .main-content {
+  width: 57%;
+  position: absolute;
+  bottom: 17%;
+  right: 0;
+  padding-left: 3.5rem;
+  padding-top: 4rem;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-content .content {
+  width: 85%;
+}
+.main-content .content h2 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 52.5px;
+}
+.main-content .content p {
+  color: gray;
+}
+
+.main-creations .creations-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-creations .creations-header h2 {
+  font-size: 52.5px;
+  text-transform: uppercase;
+}
+.main-creations .creations-header button {
+  padding: 0.5rem 2rem;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  border: 1px solid hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.main-creations .creations-header button:hover {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.main-creations .creations-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
+.creation {
+  position: relative;
+}
+.creation img {
+  width: 100%;
+  height: 100%;
+}
+.creation h3 {
+  position: absolute;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-size: 30px;
+  width: 60%;
+  bottom: 10%;
+  left: 10%;
+}
+
+.creation:hover {
+  cursor: pointer;
+}
+.creation:hover h3 {
+  color: hsl(0, 0%, 0%);
+}
+.creation:hover img {
+  filter: grayscale(5px);
+}
+.creation:hover .img-overlay {
+  background-color: rgba(216.75, 216.75, 216.75, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+footer {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  padding: 3rem 10%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-nav,
+footer .socials-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-nav-links ul {
+  display: flex;
+  gap: 2rem;
+}
+.footer-nav-links ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+.footer-nav-links ul li:hover {
+  cursor: pointer;
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+.socials-nav {
+  align-items: flex-end;
+}
+.socials-nav .socials {
+  display: flex;
+  gap: 2rem;
+}
+.socials-nav .socials img {
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+.socials-nav .socials img:hover {
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.socials-nav .trademark {
+  color: hsl(0, 0%, 85%);
+}
+
+/*# sourceMappingURL=styles.css.map */
