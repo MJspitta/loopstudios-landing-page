@@ -29,6 +29,54 @@ a {
   display: block;
 }
 
+dialog {
+  padding: 2rem 0 2rem 2rem;
+  background-color: $black;
+  color: $white;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  overflow: hidden;
+  outline: none;
+
+  .dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .close-menu:hover {
+      cursor: pointer;
+    }
+  }
+
+  .dialog-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    li {
+      list-style-type: none;
+      text-transform: uppercase;
+      font-size: calc($font-size * 1.5);
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;
+      padding: 0.5;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+    }
+    li:hover {
+      cursor: pointer;
+      background-color: $grey-200;
+      color: $black;
+    }
+  }
+}
+dialog::backdrop {
+  background-color: $black;
+}
+
 header {
   width: 100%;
   height: 100vh;
